@@ -39,16 +39,17 @@ def print_room_items(room):
     to produce a comma-separated list of item names. For example:
 
     >>> print_room_items(rooms["Reception"])
-    There is a pack of biscuits, a student handbook here.
-    <BLANKLINE>
+
+    (no output)
 
     >>> print_room_items(rooms["Office"])
     There is a pen here.
     <BLANKLINE>
 
     >>> print_room_items(rooms["Admins"])
-
-    (no output)
+    There is a student handbook, laptop, a pack of biscuits here.
+    <BLANKLINE>
+    
 
     Note: <BLANKLINE> here means that doctest should expect a blank line.
 
@@ -64,7 +65,7 @@ def print_inventory_items(items):
     print "You have ..." instead of "There is ... here.". For example:
 
     >>> print_inventory_items(inventory)
-    You have id card, laptop, money.
+    You have id card.
     <BLANKLINE>
 
     """
@@ -104,8 +105,6 @@ def print_room(room):
     game on his computer. There are corridors leading to the
     south and east. The exit is to the west.
     <BLANKLINE>
-    There is a pack of biscuits, a student handbook here.
-    <BLANKLINE>
 
     >>> print_room(rooms["Admins"])
     <BLANKLINE>
@@ -114,6 +113,8 @@ def print_room(room):
     You are leaning agains the door of the systems managers'
     room. Inside you notice Matt "MJ" John and Simon Jones. They
     ignore you. To the north is the reception.
+    <BLANKLINE>
+    There is a student handbook, laptop, a pack of biscuits here.
     <BLANKLINE>
 
     Note: <BLANKLINE> here means that doctest should expect a blank line.
